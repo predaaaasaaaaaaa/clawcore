@@ -1,0 +1,16 @@
+# deps & build
+node_modules/
+dist/
+*.tsbuildinfo
+
+# secrets & local state
+.env
+.env.*
+.openclaw/
+openclaw.json
+*.log
+
+# os / editor
+.DS_Store
+Thumbs.db
+.vscode/
