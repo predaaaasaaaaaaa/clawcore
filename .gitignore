@@ -6,8 +6,8 @@ dist/
 # secrets & local state
 .env
 .env.*
-.openclaw/
-openclaw.json
+.clawcore/
+clawcore.json
 *.log
 
 # os / editor
