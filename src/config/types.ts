@@ -5,7 +5,7 @@ import { z } from "zod";
 export const ConfigSchema = z.object({
   // "provider/model". Stripped to the bare model id before the API call.
   // Real OpenClaw default alias "gpt" → openai/gpt-5.4.
-  model: z.string().default("openai/gpt-5.4"),
+  model: z.string().default("openai-codex/gpt-5.4"),
 
   // Telegram channel. (Real nests this under channels.telegram; flattened for core.)
   telegram: z
