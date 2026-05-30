@@ -8,13 +8,14 @@
   },
   "scripts": {
     "start": "node --disable-warning=ExperimentalWarning --import tsx src/entry.ts",
-    "dev": "node --disable-warning=ExperimentalWarning --import tsx --watch src/entry.ts"
+    "dev": "node --disable-warning=ExperimentalWarning --import tsx --watch src/entry.ts",
+    "login": "node --disable-warning=ExperimentalWarning --import tsx src/entry.ts login"
   },
   "dependencies": {
+    "@mariozechner/pi-ai": "0.73.1",
     "express": "^5.2.1",
     "grammy": "^1.41.1",
     "json5": "^2.2.3",
-    "@mariozechner/pi-ai": "0.73.1",
     "typebox": "^1.1.24",
     "zod": "^4.3.6"
   },
