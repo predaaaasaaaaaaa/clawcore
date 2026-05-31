@@ -6,7 +6,7 @@ const log = createLogger("skills");
 
 export type Skill = { name: string; description: string; content: string };
 
-/** Load every skills/<name>/SKILL.md, parsing its frontmatter (name, description). */
+/** Load every skills/<name>/SKILL.md in a single directory. */
 export function loadSkills(dir: string): Skill[] {
   if (!fs.existsSync(dir)) return [];
   return fs
@@ -20,6 +20,18 @@ export function loadSkills(dir: string): Skill[] {
       log.info(`Loaded skill: ${skill.name}`);
       return [skill];
     });
+}
+
+/** Load skills from multiple dirs; later dirs override earlier by name.
+ *  Mirrors OpenClaw precedence (lowest → highest): bundled, managed, workspace. */
+export function loadSkillsFrom(dirs: string[]): Skill[] {
+  const byName = new Map<string, Skill>();
+  for (const dir of dirs) {
+    for (const skill of loadSkills(dir)) {
+      byName.set(skill.name, skill); // later dir wins
+    }
+  }
+  return [...byName.values()];
 }
 
 function parseSkill(dirName: string, raw: string): Skill {

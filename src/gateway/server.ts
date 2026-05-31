@@ -1,11 +1,11 @@
 import express from "express";
 import path from "node:path";
 import { loadConfig, resolveStateDir } from "../config/loader.js";
-import { loadSkills } from "../skills/loader.js";
+import { loadSkillsFrom } from "../skills/loader.js";
 import { startTelegramBot } from "../telegram/bot.js";
 import { runBootFile } from "./boot.js";
 import { startHeartbeatRunner } from "./heartbeat.js";
-import { ensureWorkspaceFiles } from "../workspace/bootstrap.js";
+import { ensureWorkspaceFiles, resolveWorkspaceDir } from "../workspace/bootstrap.js";
 import { isLoggedIn } from "../llm/codex-auth.js";
 import { createLogger } from "../logger.js";
 
@@ -19,7 +19,13 @@ export async function startGateway(): Promise<void> {
 
   await ensureWorkspaceFiles();
 
-  const skills = loadSkills(path.join(process.cwd(), "skills"));
+  // Skill discovery (OpenClaw precedence, lowest → highest):
+  // bundled (ships with repo) → managed (~/.clawcore/skills) → workspace (<workspace>/skills).
+  const skills = loadSkillsFrom([
+    path.join(process.cwd(), "skills"),
+    path.join(resolveStateDir(), "skills"),
+    path.join(resolveWorkspaceDir(), "skills"),
+  ]);
   log.info(`skills: ${skills.map((s) => s.name).join(", ") || "none"}`);
 
   if (!isLoggedIn()) {

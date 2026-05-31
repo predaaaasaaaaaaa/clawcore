@@ -234,6 +234,9 @@ export async function ensureWorkspaceFiles(): Promise<void> {
   const dir = resolveWorkspaceDir();
   fs.mkdirSync(dir, { recursive: true });
   fs.mkdirSync(path.join(dir, "memory"), { recursive: true });
+  fs.mkdirSync(dir, { recursive: true });
+  fs.mkdirSync(path.join(dir, "memory"), { recursive: true });
+  fs.mkdirSync(path.join(dir, "skills"), { recursive: true });
 
   const stateDir = path.join(dir, ".clawcore");
   const statePath = path.join(stateDir, "workspace-state.json");
