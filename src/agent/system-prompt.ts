@@ -1,6 +1,6 @@
 import os from "node:os";
 import type { ClawConfig } from "../config/types.js";
-import { loadWorkspaceFiles } from "../workspace/bootstrap.js";
+import { loadWorkspaceFiles, resolveWorkspaceDir } from "../workspace/bootstrap.js";
 import { searchMemory } from "../memory/index.js";
 import { buildSkillsSystemPrompt, type Skill } from "../skills/loader.js";
 
@@ -13,11 +13,13 @@ export function buildSystemPrompt(params: {
 }): string {
   const { config, skills, userMessage } = params;
 
+  const workspaceDir = resolveWorkspaceDir();
   const workspace = loadWorkspaceFiles("main");
   const workspaceSection = Object.keys(workspace).length
     ? [
         "# Workspace Files",
-        "These are already loaded for you — you don't need to re-read them. They define who you are (SOUL.md), who you're helping (USER.md), your operating rules (AGENTS.md), and your memory (MEMORY.md + daily notes).",
+        `Your workspace directory is: ${workspaceDir}`,
+        "These files are already loaded below — you don't need to re-read them. To read, write, edit, or delete any workspace file (AGENTS.md, IDENTITY.md, USER.md, MEMORY.md, BOOTSTRAP.md, etc.), use its full path inside that directory.",
         ...Object.entries(workspace).map(([n, c]) => `## ${n}\n\n${c}`),
       ].join("\n\n")
     : "";
