@@ -71,4 +71,45 @@ export const TOOL_DEFINITIONS: Tool[] = [
       }),
     }),
   },
+  {
+    name: "cron",
+    description:
+      "Schedule tasks to run later, automatically, even when the user isn't chatting. The result is delivered to the user over Telegram. " +
+      "Use this for reminders and recurring jobs ('remind me at 3pm', 'every day at 9am check X'). Actions:\n" +
+      "- add: create a job. Requires name, prompt (what to do when it fires), and schedule.\n" +
+      "- list: list all scheduled jobs.\n" +
+      "- remove: delete a job by id.\n" +
+      "Schedule kinds:\n" +
+      '- one-shot at a time: { "kind": "at", "at": "2026-06-01T09:00:00Z" } (ISO-8601, prefer UTC)\n' +
+      '- recurring cron expression: { "kind": "cron", "expr": "0 9 * * *", "tz": "Africa/Algiers" } (tz optional, IANA name)\n' +
+      '- fixed interval: { "kind": "every", "everyMs": 3600000 }',
+    parameters: Type.Object(
+      {
+        action: Type.Union([Type.Literal("add"), Type.Literal("list"), Type.Literal("remove")], {
+          description: "add, list, or remove",
+        }),
+        name: Type.Optional(Type.String({ description: "Job name (for add)." })),
+        prompt: Type.Optional(
+          Type.String({ description: "What the agent should do when the job fires (for add)." }),
+        ),
+        schedule: Type.Optional(
+          Type.Object(
+            {
+              kind: Type.Optional(
+                Type.Union([Type.Literal("at"), Type.Literal("every"), Type.Literal("cron")]),
+              ),
+              expr: Type.Optional(Type.String({ description: "Cron expression (kind=cron)." })),
+              tz: Type.Optional(Type.String({ description: "IANA timezone (kind=cron)." })),
+              at: Type.Optional(Type.String({ description: "ISO-8601 timestamp (kind=at)." })),
+              everyMs: Type.Optional(Type.Number({ description: "Interval in ms (kind=every)." })),
+              anchorMs: Type.Optional(Type.Number({ description: "Optional interval anchor (kind=every)." })),
+            },
+            { additionalProperties: true },
+          ),
+        ),
+        id: Type.Optional(Type.String({ description: "Job id (for remove)." })),
+      },
+      { additionalProperties: true },
+    ),
+  },
 ];
