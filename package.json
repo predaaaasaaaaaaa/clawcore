@@ -13,6 +13,7 @@
   },
   "dependencies": {
     "@mariozechner/pi-ai": "0.73.1",
+    "croner": "^10.0.1",
     "express": "^5.2.1",
     "grammy": "^1.41.1",
     "json5": "^2.2.3",
