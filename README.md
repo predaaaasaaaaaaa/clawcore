@@ -23,15 +23,15 @@ Most "personal AI" frameworks are huge and do a hundred things you'll never use.
 - **Learn new abilities** from drop-in Markdown skills
 
 ## How it works
-Telegram ──► Gateway ──► Agent loop ──► ChatGPT (via your subscription)
-│             │
-│             ├─ tools: bash, files, fetch, system, memory
-│             ├─ skills: drop-in SKILL.md folders
-│             └─ workspace: SOUL / AGENTS / USER / MEMORY ...
-│
-└─ heartbeat: proactive checks on a schedule
 
-The agent runs a simple loop: send the conversation to the model → if it asks for a tool, run it and feed the result back → repeat until it answers. That's the whole brain.
+Telegram is the channel you talk through. Your message goes to the Gateway, which hands it to the Agent loop. The agent thinks using your ChatGPT subscription, and between turns it can call tools, consult skills, and read its workspace files. A heartbeat runs proactive checks on a schedule.
+
+- **Gateway** — boots everything, exposes a local `/health` endpoint
+- **Agent loop** — send conversation to the model; if it asks for a tool, run it and feed the result back; repeat until it answers
+- **Tools** — bash, file read/write/list/delete, fetch_url, system_info, write_memory
+- **Skills** — drop-in `SKILL.md` folders that teach new abilities
+- **Workspace** — SOUL / AGENTS / USER / MEMORY / etc. define who it is
+- **Heartbeat** — recurring proactive checks driven by `HEARTBEAT.md`
 
 ## Memory
 
