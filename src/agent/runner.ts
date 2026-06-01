@@ -20,6 +20,7 @@ import { executeBash } from "../tools/bash.js";
 import { readFile, writeFile, listDirectory, deleteFile } from "../tools/file.js";
 import { fetchUrl } from "../tools/browser.js";
 import { getSystemInfo } from "../tools/system.js";
+import { executeCron } from "../tools/cron.js";
 import { appendDailyMemory, resolveWorkspaceDir } from "../workspace/bootstrap.js";
 import { storeMemory } from "../memory/index.js";
 import { createLogger } from "../logger.js";
@@ -151,6 +152,7 @@ async function executeTool(name: string, args: Record<string, unknown>): Promise
         storeMemory(type, content); // also index in SQLite so searchMemory can recall it
         return `Saved to ${type} memory.`;
       }
+      case "cron": return executeCron(args);
       default: return `Unknown tool: ${name}`;
     }
   } catch (e) {

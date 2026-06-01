@@ -5,6 +5,7 @@ import { loadSkillsFrom } from "../skills/loader.js";
 import { startTelegramBot } from "../telegram/bot.js";
 import { runBootFile } from "./boot.js";
 import { startHeartbeatRunner } from "./heartbeat.js";
+import { startCronService } from "../cron/service.js";
 import { ensureWorkspaceFiles, resolveWorkspaceDir } from "../workspace/bootstrap.js";
 import { isLoggedIn } from "../llm/codex-auth.js";
 import { createLogger } from "../logger.js";
@@ -63,9 +64,14 @@ export async function startGateway(): Promise<void> {
     log.warn("no Telegram config — add telegram.token + allowFrom to clawcore.json");
   }
 
-  // Proactive heartbeat (only if we can deliver alerts and it's not disabled).
+ // Proactive heartbeat (only if we can deliver alerts and it's not disabled).
   if (sendAlert && config.heartbeat?.every !== "0m") {
     startHeartbeatRunner({ config, skills, sendAlert });
+  }
+
+  // Cron scheduler (needs Telegram delivery to report results).
+  if (sendAlert) {
+    startCronService({ config, skills, sendAlert });
   }
 
   // Optional one-time startup task.
