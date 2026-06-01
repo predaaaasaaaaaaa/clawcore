@@ -74,15 +74,15 @@ export const TOOL_DEFINITIONS: Tool[] = [
   {
     name: "cron",
     description:
-      "Schedule tasks to run later, automatically, even when the user isn't chatting. The result is delivered to the user over Telegram. " +
-      "Use this for reminders and recurring jobs ('remind me at 3pm', 'every day at 9am check X'). Actions:\n" +
-      "- add: create a job. Requires name, prompt (what to do when it fires), and schedule.\n" +
-      "- list: list all scheduled jobs.\n" +
-      "- remove: delete a job by id.\n" +
-      "Schedule kinds:\n" +
-      '- one-shot at a time: { "kind": "at", "at": "2026-06-01T09:00:00Z" } (ISO-8601, prefer UTC)\n' +
-      '- recurring cron expression: { "kind": "cron", "expr": "0 9 * * *", "tz": "Africa/Algiers" } (tz optional, IANA name)\n' +
-      '- fixed interval: { "kind": "every", "everyMs": 3600000 }',
+      "Schedule tasks to run later, automatically, even when the user isn't chatting. Results are delivered over Telegram. Actions: add (needs name, prompt, schedule), list, remove (needs id).\n" +
+      "CHOOSING THE SCHEDULE KIND — important:\n" +
+      "- A reminder or task at ONE future moment ('remind me in 2 minutes', 'in an hour', 'tonight at 9pm', 'tomorrow morning') is ONE-SHOT. Use kind:'at' with an absolute ISO-8601 timestamp that you compute by adding to the current time shown in your system context. NEVER use 'every' or 'cron' for a one-time reminder.\n" +
+      "- Use kind:'cron' (or 'every') ONLY when the user explicitly wants something REPEATING ('every day at 9am', 'each morning', 'every 30 minutes').\n" +
+      "Schedule shapes:\n" +
+      '- one-shot:  { "kind": "at", "at": "2026-06-01T18:50:00Z" }\n' +
+      '- recurring: { "kind": "cron", "expr": "0 9 * * *", "tz": "Africa/Algiers" }\n' +
+      '- interval:  { "kind": "every", "everyMs": 1800000 }\n' +
+      'Example — user says "remind me in 2 minutes to stretch" and the current time is 2026-06-01T18:48:00Z → add with prompt "Tell the user to stretch" and schedule { "kind": "at", "at": "2026-06-01T18:50:00Z" }.',
     parameters: Type.Object(
       {
         action: Type.Union([Type.Literal("add"), Type.Literal("list"), Type.Literal("remove")], {
@@ -100,7 +100,7 @@ export const TOOL_DEFINITIONS: Tool[] = [
               ),
               expr: Type.Optional(Type.String({ description: "Cron expression (kind=cron)." })),
               tz: Type.Optional(Type.String({ description: "IANA timezone (kind=cron)." })),
-              at: Type.Optional(Type.String({ description: "ISO-8601 timestamp (kind=at)." })),
+              at: Type.Optional(Type.String({ description: "Absolute ISO-8601 timestamp (kind=at)." })),
               everyMs: Type.Optional(Type.Number({ description: "Interval in ms (kind=every)." })),
               anchorMs: Type.Optional(Type.Number({ description: "Optional interval anchor (kind=every)." })),
             },

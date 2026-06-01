@@ -35,8 +35,9 @@ export function startCronService(params: {
   async function fire(job: CronJob): Promise<"ok" | "error"> {
     log.info(`running cron job "${job.name}" (${job.id})`);
     const userMessage =
-      `You are running a scheduled task named "${job.name}". ` +
-      `Do the following and report the result concisely:\n\n${job.prompt}`;
+      `You are running a scheduled task named "${job.name}". This is a one-time execution. ` +
+      `Perform the task and report the result concisely. ` +
+      `Do NOT create, modify, reschedule, or remove any cron jobs — only do the task below:\n\n${job.prompt}`;
     try {
       const { reply } = await runAgent({ config, skills, history: [], userMessage });
       await sendAlert(`⏰ ${job.name}\n\n${reply}`);
