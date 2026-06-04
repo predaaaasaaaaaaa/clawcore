@@ -28,6 +28,35 @@ export function parseAbsoluteTimeMs(input: string): number | null {
   return Number.isFinite(parsed) ? parsed : null;
 }
 
+/** Parse a relative duration like "90s", "5m", "2h", "1d", "in 10 minutes" → ms. */
+export function parseDurationMs(raw: string): number | null {
+  const s = raw.trim().toLowerCase().replace(/^in\s+/, "");
+  const m = s.match(
+    /^(\d+(?:\.\d+)?)\s*(seconds|second|secs|sec|s|minutes|minute|mins|min|m|hours|hour|hrs|hr|h|days|day|d)$/,
+  );
+  if (!m) return null;
+  const val = parseFloat(m[1]);
+  if (!Number.isFinite(val) || val < 0) return null;
+  const u = m[2];
+  if (u.startsWith("s")) return val * 1000;
+  if (u.startsWith("min") || u === "m") return val * 60_000;
+  if (u.startsWith("h")) return val * 3_600_000;
+  if (u.startsWith("d")) return val * 86_400_000;
+  return null;
+}
+
+/** Resolve an `at` value (relative duration OR absolute epoch/ISO) to an absolute ISO string.
+ *  Relative is tried first so the model never has to do date arithmetic. */
+export function normalizeAtToIso(raw: string, nowMs = Date.now()): string | null {
+  const t = raw.trim();
+  if (!t) return null;
+  const dur = parseDurationMs(t);
+  if (dur !== null) return new Date(nowMs + dur).toISOString();
+  const abs = parseAbsoluteTimeMs(t);
+  if (abs !== null) return new Date(abs).toISOString();
+  return null;
+}
+
 // Cache compiled cron expressions (croner is reused per expr+tz).
 const cronCache = new Map<string, Cron>();
 const CRON_CACHE_MAX = 100;
