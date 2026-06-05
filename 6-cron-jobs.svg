@@ -1,0 +1,49 @@
+<svg viewBox="0 0 1280 720" xmlns="http://www.w3.org/2000/svg" font-family="'Trebuchet MS','Segoe UI',sans-serif">
+  <defs>
+    <radialGradient id="bg" cx="50%" cy="40%" r="80%"><stop offset="0%" stop-color="#2a0606"/><stop offset="55%" stop-color="#120303"/><stop offset="100%" stop-color="#070707"/></radialGradient>
+    <radialGradient id="clk" cx="50%" cy="45%" r="55%"><stop offset="0%" stop-color="#ffd0d0"/><stop offset="45%" stop-color="#ff4d4d"/><stop offset="100%" stop-color="#8a1010"/></radialGradient>
+    <linearGradient id="face" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#ff5a5a"/><stop offset="100%" stop-color="#c41414"/></linearGradient>
+    <filter id="glow" x="-70%" y="-70%" width="240%" height="240%"><feGaussianBlur stdDeviation="6" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+    <marker id="ac" markerWidth="14" markerHeight="14" refX="9" refY="7" orient="auto"><path d="M2,2 L11,7 L2,12" fill="none" stroke="#ff7a7a" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></marker>
+  </defs>
+  <rect width="1280" height="720" fill="url(#bg)"/>
+  <!-- moon -->
+  <g opacity="0.5" filter="url(#glow)"><path d="M1150,120 a52,52 0 1 0 36,92 a40,40 0 1 1 -36,-92 Z" fill="#ff6a6a"/></g>
+  <g fill="#ff8a8a" opacity="0.6"><circle cx="1060" cy="90" r="3"/><circle cx="1110" cy="180" r="2.5"/><circle cx="1020" cy="160" r="2"/></g>
+
+  <text x="64" y="92" fill="#ff5a5a" font-size="46" font-weight="bold" filter="url(#glow)">IT WORKS WHILE YOU SLEEP.</text>
+  <text x="66" y="132" fill="#c93333" font-size="24">say it in plain English. it schedules a real job.</text>
+
+  <!-- step 1 -->
+  <g filter="url(#glow)"><rect x="80" y="320" width="270" height="92" rx="14" fill="url(#face)" stroke="#ffb3b3" stroke-width="2"/></g>
+  <text x="215" y="356" fill="#fff" font-size="19" font-weight="bold" text-anchor="middle">"remind me in</text>
+  <text x="215" y="382" fill="#fff" font-size="19" font-weight="bold" text-anchor="middle">1 min to drink water"</text>
+
+  <!-- arrow -->
+  <path d="M352,366 L452,366" fill="none" stroke="#ff7a7a" stroke-width="4" stroke-linecap="round" marker-end="url(#ac)" filter="url(#glow)"/>
+
+  <!-- clock -->
+  <g filter="url(#glow)" transform="translate(560 366)">
+    <circle cx="0" cy="0" r="92" fill="url(#clk)"/>
+    <circle cx="0" cy="0" r="92" fill="none" stroke="#ffcaca" stroke-width="3"/>
+    <line x1="0" y1="0" x2="0" y2="-56" stroke="#2a0303" stroke-width="6" stroke-linecap="round"/>
+    <line x1="0" y1="0" x2="40" y2="14" stroke="#2a0303" stroke-width="6" stroke-linecap="round"/>
+    <circle cx="0" cy="0" r="7" fill="#2a0303"/>
+  </g>
+  <text x="560" y="492" fill="#ffb3b3" font-size="17" text-anchor="middle">saved job · fires on time</text>
+
+  <!-- arrow -->
+  <path d="M660,366 L772,366" fill="none" stroke="#ff7a7a" stroke-width="4" stroke-linecap="round" marker-end="url(#ac)" filter="url(#glow)"/>
+
+  <!-- phone with ⏰ -->
+  <g filter="url(#glow)" transform="translate(800 250)">
+    <rect x="6" y="10" width="160" height="250" rx="22" fill="#7a0f0f"/>
+    <rect x="0" y="0" width="160" height="250" rx="22" fill="#1a0404" stroke="#ff5a5a" stroke-width="2.5"/>
+    <rect x="16" y="40" width="128" height="64" rx="12" fill="url(#face)"/>
+    <text x="80" y="70" fill="#fff" font-size="22" text-anchor="middle">⏰</text>
+    <text x="80" y="94" fill="#fff" font-size="14" text-anchor="middle">drink water</text>
+  </g>
+  <text x="880" y="540" fill="#ff8a8a" font-size="19" font-weight="bold" text-anchor="middle">it texts YOU first</text>
+
+  <text x="640" y="660" fill="#ff6a6a" font-size="24" font-weight="bold" text-anchor="middle" filter="url(#glow)">now imagine: "every morning at 8, brief me."</text>
+</svg>

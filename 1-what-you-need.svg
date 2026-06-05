@@ -1,0 +1,42 @@
+<svg viewBox="0 0 1280 720" xmlns="http://www.w3.org/2000/svg" font-family="'Trebuchet MS','Segoe UI',sans-serif">
+  <defs>
+    <radialGradient id="bg" cx="50%" cy="40%" r="80%"><stop offset="0%" stop-color="#2a0606"/><stop offset="55%" stop-color="#120303"/><stop offset="100%" stop-color="#070707"/></radialGradient>
+    <linearGradient id="face" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#ff5a5a"/><stop offset="100%" stop-color="#c41414"/></linearGradient>
+    <filter id="glow" x="-60%" y="-60%" width="220%" height="220%"><feGaussianBlur stdDeviation="6" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+  </defs>
+  <rect width="1280" height="720" fill="url(#bg)"/>
+  <g stroke="#7a0f0f" stroke-width="1.2" opacity="0.4"><path d="M120,620 H1160 M40,680 H1240"/></g>
+
+  <text x="640" y="96" fill="#ff5a5a" font-size="48" font-weight="bold" text-anchor="middle" filter="url(#glow)">WHAT YOU NEED — 4 THINGS.</text>
+
+  <!-- 4 chips -->
+  <g font-family="'Trebuchet MS','Segoe UI',sans-serif">
+    <g filter="url(#glow)" transform="translate(110 230)"><rect x="8" y="12" width="250" height="220" rx="18" fill="#7a0f0f"/><rect x="0" y="0" width="250" height="220" rx="18" fill="url(#face)" stroke="#ffb3b3" stroke-width="2"/>
+      <text x="125" y="70" font-size="58" text-anchor="middle">⬢</text>
+      <text x="125" y="140" fill="#fff" font-size="28" font-weight="bold" text-anchor="middle">Node.js</text>
+      <text x="125" y="174" fill="#ffdada" font-size="17" text-anchor="middle">installed</text>
+    </g>
+    <g filter="url(#glow)" transform="translate(395 230)"><rect x="8" y="12" width="250" height="220" rx="18" fill="#7a0f0f"/><rect x="0" y="0" width="250" height="220" rx="18" fill="url(#face)" stroke="#ffb3b3" stroke-width="2"/>
+      <text x="125" y="74" font-size="54" text-anchor="middle">✈️</text>
+      <text x="125" y="140" fill="#fff" font-size="26" font-weight="bold" text-anchor="middle">Telegram bot</text>
+      <text x="125" y="174" fill="#ffdada" font-size="17" text-anchor="middle">@BotFather · 30 sec</text>
+    </g>
+    <g filter="url(#glow)" transform="translate(680 230)"><rect x="8" y="12" width="250" height="220" rx="18" fill="#7a0f0f"/><rect x="0" y="0" width="250" height="220" rx="18" fill="url(#face)" stroke="#ffb3b3" stroke-width="2"/>
+      <text x="125" y="74" font-size="54" text-anchor="middle">🆔</text>
+      <text x="125" y="140" fill="#fff" font-size="27" font-weight="bold" text-anchor="middle">Your ID</text>
+      <text x="125" y="174" fill="#ffdada" font-size="17" text-anchor="middle">@userinfobot</text>
+    </g>
+    <g filter="url(#glow)" transform="translate(965 230)"><rect x="8" y="12" width="250" height="220" rx="18" fill="#7a0f0f"/><rect x="0" y="0" width="250" height="220" rx="18" fill="url(#face)" stroke="#ffb3b3" stroke-width="2"/>
+      <text x="125" y="74" font-size="54" text-anchor="middle">💬</text>
+      <text x="125" y="136" fill="#fff" font-size="24" font-weight="bold" text-anchor="middle">ChatGPT</text>
+      <text x="125" y="166" fill="#fff" font-size="24" font-weight="bold" text-anchor="middle">account</text>
+    </g>
+  </g>
+
+  <!-- stamp -->
+  <g filter="url(#glow)" transform="translate(640 560) rotate(-4)">
+    <rect x="-300" y="-44" width="600" height="92" rx="14" fill="none" stroke="#ff5a5a" stroke-width="5"/>
+    <text x="0" y="-4" fill="#ff6a6a" font-size="40" font-weight="bold" text-anchor="middle">NO API KEY · NO BILL</text>
+    <text x="0" y="30" fill="#d94a4a" font-size="20" text-anchor="middle">it runs on your ChatGPT subscription</text>
+  </g>
+</svg>

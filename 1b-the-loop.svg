@@ -1,0 +1,71 @@
+<svg viewBox="0 0 1280 720" xmlns="http://www.w3.org/2000/svg" font-family="'Trebuchet MS','Segoe UI',sans-serif">
+  <defs>
+    <radialGradient id="bg" cx="50%" cy="40%" r="80%">
+      <stop offset="0%" stop-color="#2a0606"/><stop offset="55%" stop-color="#120303"/><stop offset="100%" stop-color="#070707"/>
+    </radialGradient>
+    <linearGradient id="face" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#ff5555"/><stop offset="100%" stop-color="#c41414"/>
+    </linearGradient>
+    <linearGradient id="faceHot" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#ff8a8a"/><stop offset="100%" stop-color="#e01b1b"/>
+    </linearGradient>
+    <filter id="glow" x="-60%" y="-60%" width="220%" height="220%">
+      <feGaussianBlur stdDeviation="7" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <marker id="ah" markerWidth="14" markerHeight="14" refX="9" refY="7" orient="auto">
+      <path d="M2,2 L11,7 L2,12" fill="none" stroke="#ff6a6a" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+    </marker>
+  </defs>
+  <rect width="1280" height="720" fill="url(#bg)"/>
+  <!-- perspective floor -->
+  <g stroke="#7a0f0f" stroke-width="1.2" opacity="0.5">
+    <path d="M-100,620 L640,470 M1380,620 L640,470 M120,700 L640,470 M1160,700 L640,470 M400,700 L600,470 M880,700 L680,470"/>
+    <path d="M120,560 H1160 M40,620 H1240 M-40,690 H1320" opacity="0.4"/>
+  </g>
+
+  <text x="64" y="86" fill="#ff5a5a" font-size="46" font-weight="bold" filter="url(#glow)">AN AGENT IS JUST A LOOP.</text>
+  <text x="66" y="126" fill="#c93333" font-size="24">thin harness · smart model · sharp tools</text>
+
+  <!-- YOU -->
+  <g filter="url(#glow)">
+    <rect x="96" y="320" width="250" height="110" rx="16" fill="#7a0f0f"/>
+    <rect x="96" y="308" width="250" height="110" rx="16" fill="url(#face)" stroke="#ff9a9a" stroke-width="2"/>
+  </g>
+  <text x="221" y="352" fill="#fff" font-size="30" font-weight="bold" text-anchor="middle">YOU 📱</text>
+  <text x="221" y="386" fill="#ffd9d9" font-size="18" text-anchor="middle">send a message</text>
+
+  <!-- MODEL (hot core) -->
+  <g filter="url(#glow)">
+    <rect x="496" y="316" width="290" height="120" rx="18" fill="#8a1212"/>
+    <rect x="496" y="300" width="290" height="120" rx="18" fill="url(#faceHot)" stroke="#ffcaca" stroke-width="2.5"/>
+  </g>
+  <text x="641" y="348" fill="#fff" font-size="34" font-weight="bold" text-anchor="middle">THE MODEL</text>
+  <text x="641" y="384" fill="#ffe0e0" font-size="19" text-anchor="middle">the brain</text>
+
+  <!-- REPLY -->
+  <g filter="url(#glow)">
+    <rect x="954" y="168" width="252" height="108" rx="16" fill="#7a0f0f"/>
+    <rect x="954" y="156" width="252" height="108" rx="16" fill="url(#face)" stroke="#ff9a9a" stroke-width="2"/>
+  </g>
+  <text x="1080" y="200" fill="#fff" font-size="26" font-weight="bold" text-anchor="middle">TEXTS YOU BACK</text>
+  <text x="1080" y="232" fill="#ffd9d9" font-size="18" text-anchor="middle">done ✓</text>
+
+  <!-- TOOL -->
+  <g filter="url(#glow)">
+    <rect x="556" y="528" width="310" height="108" rx="16" fill="#7a0f0f"/>
+    <rect x="556" y="516" width="310" height="108" rx="16" fill="url(#face)" stroke="#ff9a9a" stroke-width="2"/>
+  </g>
+  <text x="711" y="556" fill="#fff" font-size="28" font-weight="bold" text-anchor="middle">RUN A TOOL 🔧</text>
+  <text x="711" y="588" fill="#ffd9d9" font-size="18" text-anchor="middle">on your computer</text>
+
+  <!-- arrows -->
+  <path d="M348,360 L492,360" fill="none" stroke="#ff6a6a" stroke-width="4" stroke-linecap="round" marker-end="url(#ah)" filter="url(#glow)"/>
+  <path d="M786,318 C900,270 910,235 950,232" fill="none" stroke="#ff6a6a" stroke-width="4" stroke-linecap="round" marker-end="url(#ah)" filter="url(#glow)"/>
+  <text x="892" y="288" fill="#ff7a7a" font-size="19" text-anchor="middle">has an answer</text>
+  <path d="M660,420 C672,462 692,488 706,512" fill="none" stroke="#ff6a6a" stroke-width="4" stroke-linecap="round" marker-end="url(#ah)" filter="url(#glow)"/>
+  <text x="806" y="474" fill="#ff7a7a" font-size="19" text-anchor="middle">needs a tool</text>
+  <path d="M556,572 C380,572 372,372 492,372" fill="none" stroke="#ff5a5a" stroke-width="4" stroke-linecap="round" stroke-dasharray="2 11" marker-end="url(#ah)" filter="url(#glow)"/>
+  <text x="372" y="476" fill="#c93333" font-size="19" text-anchor="middle">hand back the result</text>
+
+  <text x="700" y="690" fill="#ff7a7a" font-size="22" text-anchor="middle">…repeat until it has a real answer.</text>
+</svg>

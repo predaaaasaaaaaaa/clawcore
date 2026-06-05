@@ -1,0 +1,46 @@
+<svg viewBox="0 0 1280 720" xmlns="http://www.w3.org/2000/svg" font-family="'Trebuchet MS','Segoe UI',sans-serif">
+  <defs>
+    <radialGradient id="bg" cx="50%" cy="40%" r="80%"><stop offset="0%" stop-color="#2a0606"/><stop offset="55%" stop-color="#120303"/><stop offset="100%" stop-color="#070707"/></radialGradient>
+    <linearGradient id="front" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#e83030"/><stop offset="100%" stop-color="#9c1010"/></linearGradient>
+    <linearGradient id="front3" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#ff5a5a"/><stop offset="100%" stop-color="#c41414"/></linearGradient>
+    <filter id="glow" x="-60%" y="-60%" width="220%" height="220%"><feGaussianBlur stdDeviation="6" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+    <filter id="glowS" x="-90%" y="-90%" width="280%" height="280%"><feGaussianBlur stdDeviation="11" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+  </defs>
+  <rect width="1280" height="720" fill="url(#bg)"/>
+  <g stroke="#7a0f0f" stroke-width="1.2" opacity="0.35"><path d="M60,562 H1220 M20,620 H1260"/></g>
+
+  <text x="640" y="92" fill="#ff5a5a" font-size="46" font-weight="bold" text-anchor="middle" filter="url(#glow)">MAKE IT YOURS — 3 LEVELS.</text>
+
+  <!-- LEVEL 1 -->
+  <g filter="url(#glow)">
+    <polygon points="120,440 154,420 454,420 420,440" fill="#ff7a7a" stroke="#ffb3b3" stroke-width="2"/>
+    <rect x="120" y="440" width="300" height="120" fill="url(#front)" stroke="#ffb3b3" stroke-width="2"/>
+  </g>
+  <text x="270" y="412" fill="#ff8a8a" font-size="20" font-weight="bold" text-anchor="middle">EASY</text>
+  <text x="270" y="484" fill="#fff" font-size="24" font-weight="bold" text-anchor="middle">1 · New skill</text>
+  <text x="270" y="516" fill="#ffdada" font-size="17" text-anchor="middle">a markdown file</text>
+  <text x="270" y="540" fill="#ffdada" font-size="17" text-anchor="middle">no code</text>
+
+  <!-- LEVEL 2 -->
+  <g filter="url(#glow)">
+    <polygon points="470,360 504,340 804,340 770,360" fill="#ff7a7a" stroke="#ffb3b3" stroke-width="2"/>
+    <rect x="470" y="360" width="300" height="200" fill="url(#front)" stroke="#ffb3b3" stroke-width="2"/>
+  </g>
+  <text x="620" y="332" fill="#ff8a8a" font-size="20" font-weight="bold" text-anchor="middle">MEDIUM</text>
+  <text x="620" y="424" fill="#fff" font-size="24" font-weight="bold" text-anchor="middle">2 · New tool</text>
+  <text x="620" y="456" fill="#ffdada" font-size="17" text-anchor="middle">a small code file</text>
+  <text x="620" y="480" fill="#ffdada" font-size="17" text-anchor="middle">+ one menu entry</text>
+
+  <!-- LEVEL 3 (special) -->
+  <g filter="url(#glowS)">
+    <polygon points="820,260 854,240 1174,240 1140,260" fill="#ff9a9a" stroke="#ffd0d0" stroke-width="2.5"/>
+    <rect x="820" y="260" width="320" height="300" fill="url(#front3)" stroke="#ffd0d0" stroke-width="2.5"/>
+  </g>
+  <g filter="url(#glow)" transform="translate(980 220)"><rect x="-92" y="-22" width="184" height="40" rx="10" fill="#1a0404" stroke="#ff5a5a" stroke-width="2"/><text x="0" y="6" fill="#ff8a8a" font-size="18" font-weight="bold" text-anchor="middle">🔒 NEXT VIDEO</text></g>
+  <text x="980" y="346" fill="#fff" font-size="28" font-weight="bold" text-anchor="middle">3 · MCP</text>
+  <text x="980" y="384" fill="#fff" font-size="18" text-anchor="middle">plug in real apps:</text>
+  <text x="980" y="410" fill="#ffe0e0" font-size="18" text-anchor="middle">email · calendar · Notion</text>
+  <text x="980" y="446" fill="#ffe0e0" font-size="18" text-anchor="middle">control anything</text>
+
+  <text x="640" y="668" fill="#ff6a6a" font-size="24" font-weight="bold" text-anchor="middle" filter="url(#glow)">start at level 1 today. you'll be at level 3 soon.</text>
+</svg>

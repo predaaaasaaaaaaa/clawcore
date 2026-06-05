@@ -1,0 +1,48 @@
+<svg viewBox="0 0 1280 720" xmlns="http://www.w3.org/2000/svg" font-family="'Trebuchet MS','Segoe UI',sans-serif">
+  <defs>
+    <radialGradient id="bg" cx="50%" cy="40%" r="80%"><stop offset="0%" stop-color="#2a0606"/><stop offset="55%" stop-color="#120303"/><stop offset="100%" stop-color="#070707"/></radialGradient>
+    <linearGradient id="fold" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#ff6a6a"/><stop offset="100%" stop-color="#a81010"/></linearGradient>
+    <linearGradient id="file" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#ff5a5a"/><stop offset="100%" stop-color="#c41414"/></linearGradient>
+    <filter id="glow" x="-60%" y="-60%" width="220%" height="220%"><feGaussianBlur stdDeviation="6" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+    <marker id="ah4" markerWidth="13" markerHeight="13" refX="8" refY="6.5" orient="auto"><path d="M2,2 L10,6.5 L2,11" fill="none" stroke="#ff7a7a" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></marker>
+  </defs>
+  <rect width="1280" height="720" fill="url(#bg)"/>
+  <g stroke="#7a0f0f" stroke-width="1.2" opacity="0.4"><path d="M120,620 H1160 M40,680 H1240"/></g>
+
+  <text x="64" y="86" fill="#ff5a5a" font-size="44" font-weight="bold" filter="url(#glow)">ITS SOUL LIVES IN TEXT FILES.</text>
+  <text x="66" y="124" fill="#c93333" font-size="23">not in code. a folder you can open in Notepad.</text>
+
+  <!-- 3D folder -->
+  <g filter="url(#glow)" transform="translate(120 300)">
+    <path d="M16,28 L120,28 L146,58 L300,58 L300,40 L300,40" fill="none"/>
+    <path d="M0,40 L96,40 L120,16 L300,16 L300,200 L0,200 Z" fill="#5a0c0c" stroke="#ff5a5a" stroke-width="2"/>
+    <path d="M0,40 L96,40 L120,64 L300,64 L300,200 L0,200 Z" fill="url(#fold)" stroke="#ffb3b3" stroke-width="2"/>
+    <text x="150" y="140" fill="#fff" font-size="26" font-weight="bold" text-anchor="middle">workspace/</text>
+  </g>
+  <text x="270" y="536" fill="#c93333" font-size="17" text-anchor="middle">~/.clawcore/workspace</text>
+
+  <!-- file cards -->
+  <g font-family="'Trebuchet MS','Segoe UI',sans-serif">
+    <g filter="url(#glow)" transform="translate(560 196)"><rect x="6" y="10" width="320" height="80" rx="12" fill="#7a0f0f"/><rect x="0" y="0" width="320" height="80" rx="12" fill="url(#file)" stroke="#ffb3b3" stroke-width="2"/><text x="24" y="38" fill="#fff" font-size="26" font-weight="bold">SOUL.md</text><text x="24" y="64" fill="#ffdada" font-size="17">who it is · how it talks</text></g>
+    <g filter="url(#glow)" transform="translate(560 300)"><rect x="6" y="10" width="320" height="80" rx="12" fill="#7a0f0f"/><rect x="0" y="0" width="320" height="80" rx="12" fill="url(#file)" stroke="#ffb3b3" stroke-width="2"/><text x="24" y="38" fill="#fff" font-size="26" font-weight="bold">AGENTS.md</text><text x="24" y="64" fill="#ffdada" font-size="17">its rules · red lines</text></g>
+    <g filter="url(#glow)" transform="translate(560 404)"><rect x="6" y="10" width="320" height="80" rx="12" fill="#7a0f0f"/><rect x="0" y="0" width="320" height="80" rx="12" fill="url(#file)" stroke="#ffb3b3" stroke-width="2"/><text x="24" y="38" fill="#fff" font-size="26" font-weight="bold">USER.md</text><text x="24" y="64" fill="#ffdada" font-size="17">who YOU are</text></g>
+    <g filter="url(#glow)" transform="translate(560 508)"><rect x="6" y="10" width="320" height="80" rx="12" fill="#7a0f0f"/><rect x="0" y="0" width="320" height="80" rx="12" fill="url(#file)" stroke="#ffb3b3" stroke-width="2"/><text x="24" y="38" fill="#fff" font-size="26" font-weight="bold">MEMORY.md</text><text x="24" y="64" fill="#ffdada" font-size="17">what it learned</text></g>
+  </g>
+
+  <!-- connectors -->
+  <g filter="url(#glow)">
+    <path d="M420,372 C480,300 500,250 556,236" fill="none" stroke="#ff7a7a" stroke-width="3" stroke-linecap="round" marker-end="url(#ah4)"/>
+    <path d="M420,392 L556,340" fill="none" stroke="#ff7a7a" stroke-width="3" stroke-linecap="round" marker-end="url(#ah4)"/>
+    <path d="M420,412 C480,440 500,452 556,444" fill="none" stroke="#ff7a7a" stroke-width="3" stroke-linecap="round" marker-end="url(#ah4)"/>
+    <path d="M420,432 C480,520 500,540 556,548" fill="none" stroke="#ff7a7a" stroke-width="3" stroke-linecap="round" marker-end="url(#ah4)"/>
+  </g>
+
+  <!-- note -->
+  <text x="950" y="316" fill="#ff8a8a" font-size="24" font-weight="bold" filter="url(#glow)">first boot:</text>
+  <text x="950" y="352" fill="#d94a4a" font-size="22">it asks who it is,</text>
+  <text x="950" y="380" fill="#d94a4a" font-size="22">writes its own soul,</text>
+  <text x="950" y="408" fill="#d94a4a" font-size="22">deletes the onboarding</text>
+  <text x="950" y="436" fill="#d94a4a" font-size="22">note when it's done.</text>
+
+  <text x="640" y="690" fill="#ff6a6a" font-size="24" font-weight="bold" text-anchor="middle" filter="url(#glow)">want it sarcastic? open SOUL.md and tell it.</text>
+</svg>

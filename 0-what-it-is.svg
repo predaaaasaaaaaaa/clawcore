@@ -1,0 +1,59 @@
+<svg viewBox="0 0 1280 720" xmlns="http://www.w3.org/2000/svg" font-family="'Trebuchet MS','Segoe UI',sans-serif">
+  <defs>
+    <radialGradient id="bg" cx="50%" cy="42%" r="80%"><stop offset="0%" stop-color="#2a0606"/><stop offset="55%" stop-color="#120303"/><stop offset="100%" stop-color="#070707"/></radialGradient>
+    <radialGradient id="core" cx="50%" cy="50%" r="50%"><stop offset="0%" stop-color="#ffd0d0"/><stop offset="40%" stop-color="#ff4d4d"/><stop offset="100%" stop-color="#8a1010"/></radialGradient>
+    <linearGradient id="face" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#ff5a5a"/><stop offset="100%" stop-color="#c41414"/></linearGradient>
+    <linearGradient id="deck" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#b81818"/><stop offset="100%" stop-color="#6a0d0d"/></linearGradient>
+    <filter id="glow" x="-70%" y="-70%" width="240%" height="240%"><feGaussianBlur stdDeviation="7" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+    <marker id="a0" markerWidth="14" markerHeight="14" refX="9" refY="7" orient="auto"><path d="M2,2 L11,7 L2,12" fill="none" stroke="#ff7a7a" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></marker>
+  </defs>
+  <rect width="1280" height="720" fill="url(#bg)"/>
+  <g stroke="#7a0f0f" stroke-width="1.2" opacity="0.45"><path d="M120,610 H1160 M30,675 H1250 M420,700 L600,500 M860,700 L680,500"/></g>
+
+  <text x="640" y="92" fill="#ff5a5a" font-size="46" font-weight="bold" text-anchor="middle" filter="url(#glow)">IT RUNS ON YOUR MACHINE.</text>
+  <text x="640" y="132" fill="#c93333" font-size="24" text-anchor="middle">not the cloud. not a company's AI. yours.</text>
+
+  <!-- phone -->
+  <g filter="url(#glow)" transform="translate(150 300)">
+    <rect x="6" y="10" width="150" height="250" rx="22" fill="#7a0f0f"/>
+    <rect x="0" y="0" width="150" height="250" rx="22" fill="#1a0404" stroke="#ff5a5a" stroke-width="2.5"/>
+    <rect x="16" y="34" width="118" height="184" rx="8" fill="#2a0606"/>
+    <rect x="28" y="58" width="78" height="26" rx="8" fill="url(#face)"/>
+    <rect x="46" y="98" width="78" height="26" rx="8" fill="#5a0c0c"/>
+    <rect x="28" y="138" width="64" height="26" rx="8" fill="url(#face)"/>
+    <text x="75" y="244" fill="#ff8a8a" font-size="15" text-anchor="middle">Telegram</text>
+  </g>
+  <text x="225" y="288" fill="#ff8a8a" font-size="20" font-weight="bold" text-anchor="middle">YOU 📱</text>
+
+  <!-- laptop with glowing brain -->
+  <g filter="url(#glow)" transform="translate(500 250)">
+    <rect x="40" y="6" width="260" height="172" rx="14" fill="#1a0404" stroke="#ff5a5a" stroke-width="3"/>
+    <circle cx="170" cy="92" r="58" fill="url(#core)"/>
+    <text x="170" y="100" fill="#2a0303" font-size="30" font-weight="bold" text-anchor="middle">AI</text>
+    <path d="M10,196 L330,196 L300,178 L40,178 Z" fill="url(#deck)" stroke="#ff7a7a" stroke-width="2"/>
+  </g>
+  <text x="670" y="470" fill="#ff8a8a" font-size="20" font-weight="bold" text-anchor="middle">YOUR LAPTOP = the brain + the hands</text>
+
+  <!-- tools right -->
+  <g font-size="17" fill="#fff">
+    <g filter="url(#glow)"><rect x="980" y="262" width="220" height="46" rx="10" fill="url(#face)"/></g><text x="1090" y="291" text-anchor="middle">run commands</text>
+    <g filter="url(#glow)"><rect x="1000" y="320" width="200" height="46" rx="10" fill="url(#face)"/></g><text x="1100" y="349" text-anchor="middle">files</text>
+    <g filter="url(#glow)"><rect x="980" y="378" width="220" height="46" rx="10" fill="url(#face)"/></g><text x="1090" y="407" text-anchor="middle">browse the web</text>
+    <g filter="url(#glow)"><rect x="1000" y="436" width="200" height="46" rx="10" fill="url(#face)"/></g><text x="1100" y="465" text-anchor="middle">check the system</text>
+  </g>
+
+  <!-- arrows -->
+  <g filter="url(#glow)">
+    <path d="M306,420 C420,420 430,360 496,348" fill="none" stroke="#ff7a7a" stroke-width="4" stroke-linecap="round" marker-end="url(#a0)"/>
+    <path d="M496,372 C430,470 430,470 312,452" fill="none" stroke="#ff5a5a" stroke-width="4" stroke-linecap="round" stroke-dasharray="2 10" marker-end="url(#a0)"/>
+    <path d="M806,350 L972,310" fill="none" stroke="#ff7a7a" stroke-width="4" stroke-linecap="round" marker-end="url(#a0)"/>
+    <path d="M806,380 L972,430" fill="none" stroke="#ff7a7a" stroke-width="4" stroke-linecap="round" marker-end="url(#a0)"/>
+  </g>
+
+  <!-- badge -->
+  <g filter="url(#glow)" transform="translate(640 600) rotate(-2)">
+    <rect x="-260" y="-34" width="520" height="68" rx="16" fill="#7a0f0f"/>
+    <rect x="-260" y="-40" width="520" height="68" rx="16" fill="url(#face)" stroke="#ffcaca" stroke-width="2"/>
+    <text x="0" y="2" fill="#fff" font-size="26" font-weight="bold" text-anchor="middle">runs on YOUR ChatGPT — no API key, no bill</text>
+  </g>
+</svg>

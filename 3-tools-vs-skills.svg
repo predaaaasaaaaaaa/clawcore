@@ -1,0 +1,49 @@
+<svg viewBox="0 0 1280 720" xmlns="http://www.w3.org/2000/svg" font-family="'Trebuchet MS','Segoe UI',sans-serif">
+  <defs>
+    <radialGradient id="bg" cx="50%" cy="40%" r="80%"><stop offset="0%" stop-color="#2a0606"/><stop offset="55%" stop-color="#120303"/><stop offset="100%" stop-color="#070707"/></radialGradient>
+    <linearGradient id="panel" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#5a0c0c"/><stop offset="100%" stop-color="#2a0606"/></linearGradient>
+    <linearGradient id="chip" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#ff6a6a"/><stop offset="100%" stop-color="#c41414"/></linearGradient>
+    <filter id="glow" x="-60%" y="-60%" width="220%" height="220%"><feGaussianBlur stdDeviation="6" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+  </defs>
+  <rect width="1280" height="720" fill="url(#bg)"/>
+  <g stroke="#7a0f0f" stroke-width="1.2" opacity="0.4"><path d="M120,610 H1160 M40,670 H1240"/></g>
+
+  <text x="64" y="86" fill="#ff5a5a" font-size="46" font-weight="bold" filter="url(#glow)">TOOLS vs SKILLS.</text>
+  <text x="66" y="124" fill="#c93333" font-size="24">everyone gets this backwards.</text>
+
+  <!-- TOOLS pillar -->
+  <g filter="url(#glow)">
+    <rect x="150" y="208" width="360" height="392" rx="18" fill="#7a0f0f"/>
+    <rect x="150" y="196" width="360" height="392" rx="18" fill="url(#panel)" stroke="#ff5a5a" stroke-width="2.5"/>
+  </g>
+  <text x="330" y="252" fill="#ff8a8a" font-size="36" font-weight="bold" text-anchor="middle">TOOLS 🔧</text>
+  <text x="330" y="286" fill="#c93333" font-size="22" text-anchor="middle">what it CAN do</text>
+  <g font-size="20" fill="#fff">
+    <g filter="url(#glow)"><rect x="186" y="306" width="288" height="46" rx="10" fill="url(#chip)"/></g><text x="206" y="335">run commands</text>
+    <g filter="url(#glow)"><rect x="186" y="360" width="288" height="46" rx="10" fill="url(#chip)"/></g><text x="206" y="389">read / write files</text>
+    <g filter="url(#glow)"><rect x="186" y="414" width="288" height="46" rx="10" fill="url(#chip)"/></g><text x="206" y="443">fetch the web</text>
+    <g filter="url(#glow)"><rect x="186" y="468" width="288" height="46" rx="10" fill="url(#chip)"/></g><text x="206" y="497">check the system</text>
+  </g>
+  <text x="330" y="560" fill="#ff8a8a" font-size="20" font-weight="bold" text-anchor="middle">written in CODE</text>
+
+  <!-- SKILLS pillar -->
+  <g filter="url(#glow)">
+    <rect x="770" y="208" width="360" height="392" rx="18" fill="#7a0f0f"/>
+    <rect x="770" y="196" width="360" height="392" rx="18" fill="url(#panel)" stroke="#ff5a5a" stroke-width="2.5"/>
+  </g>
+  <text x="950" y="252" fill="#ff8a8a" font-size="36" font-weight="bold" text-anchor="middle">SKILLS 📝</text>
+  <text x="950" y="286" fill="#c93333" font-size="22" text-anchor="middle">what it KNOWS to do</text>
+  <!-- 3D markdown note -->
+  <g filter="url(#glow)" transform="translate(818 312)">
+    <rect x="8" y="12" width="268" height="196" rx="12" fill="#5a0c0c"/>
+    <rect x="0" y="0" width="268" height="196" rx="12" fill="url(#chip)" stroke="#ffb3b3" stroke-width="2"/>
+    <text x="22" y="40" fill="#fff" font-size="18" font-weight="bold">name: weather</text>
+    <text x="22" y="74" fill="#fff" font-size="17">when the user asks</text>
+    <text x="22" y="98" fill="#fff" font-size="17">about weather…</text>
+    <text x="22" y="138" fill="#ffe0e0" font-size="17">use the bash tool</text>
+    <text x="22" y="162" fill="#ffe0e0" font-size="17">+ curl wttr.in</text>
+  </g>
+  <text x="950" y="560" fill="#ff8a8a" font-size="20" font-weight="bold" text-anchor="middle">just a TEXT file — no code</text>
+
+  <text x="640" y="688" fill="#ff6a6a" font-size="24" font-weight="bold" text-anchor="middle" filter="url(#glow)">a skill teaches it how to use the tools.</text>
+</svg>

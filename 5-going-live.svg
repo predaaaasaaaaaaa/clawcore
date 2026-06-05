@@ -1,0 +1,44 @@
+<svg viewBox="0 0 1280 720" xmlns="http://www.w3.org/2000/svg" font-family="'Trebuchet MS','Segoe UI',sans-serif">
+  <defs>
+    <radialGradient id="bg" cx="50%" cy="42%" r="80%"><stop offset="0%" stop-color="#2a0606"/><stop offset="55%" stop-color="#120303"/><stop offset="100%" stop-color="#070707"/></radialGradient>
+    <radialGradient id="hub" cx="50%" cy="45%" r="55%"><stop offset="0%" stop-color="#ffd0d0"/><stop offset="45%" stop-color="#ff4d4d"/><stop offset="100%" stop-color="#8a1010"/></radialGradient>
+    <linearGradient id="face" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#ff5a5a"/><stop offset="100%" stop-color="#c41414"/></linearGradient>
+    <filter id="glow" x="-70%" y="-70%" width="240%" height="240%"><feGaussianBlur stdDeviation="6" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+  </defs>
+  <rect width="1280" height="720" fill="url(#bg)"/>
+
+  <text x="640" y="84" fill="#ff5a5a" font-size="44" font-weight="bold" text-anchor="middle" filter="url(#glow)">WIRE IT UP. TURN IT ON.</text>
+
+  <!-- spokes (draw behind) -->
+  <g stroke="#ff6a6a" stroke-width="3.5" opacity="0.85" filter="url(#glow)">
+    <line x1="640" y1="390" x2="300" y2="250"/>
+    <line x1="640" y1="390" x2="980" y2="250"/>
+    <line x1="640" y1="390" x2="250" y2="430"/>
+    <line x1="640" y1="390" x2="1030" y2="430"/>
+    <line x1="640" y1="390" x2="430" y2="600"/>
+    <line x1="640" y1="390" x2="850" y2="600"/>
+  </g>
+
+  <!-- hub -->
+  <g filter="url(#glow)">
+    <circle cx="640" cy="390" r="92" fill="url(#hub)"/>
+    <text x="640" y="384" fill="#2a0303" font-size="28" font-weight="bold" text-anchor="middle">GATEWAY</text>
+    <text x="640" y="412" fill="#3a0505" font-size="15" text-anchor="middle">turns it all on</text>
+  </g>
+
+  <!-- nodes -->
+  <g font-size="19" fill="#fff" text-anchor="middle">
+    <g filter="url(#glow)"><rect x="190" y="216" width="220" height="60" rx="12" fill="url(#face)" stroke="#ffb3b3" stroke-width="1.5"/></g><text x="300" y="253">Telegram 📱</text>
+    <g filter="url(#glow)"><rect x="870" y="216" width="220" height="60" rx="12" fill="url(#face)" stroke="#ffb3b3" stroke-width="1.5"/></g><text x="980" y="253">Agent loop 🧠</text>
+    <g filter="url(#glow)"><rect x="140" y="402" width="220" height="60" rx="12" fill="url(#face)" stroke="#ffb3b3" stroke-width="1.5"/></g><text x="250" y="439">Memory 💾</text>
+    <g filter="url(#glow)"><rect x="920" y="402" width="220" height="60" rx="12" fill="url(#face)" stroke="#ffb3b3" stroke-width="1.5"/></g><text x="1030" y="439">Skills 📝</text>
+    <g filter="url(#glow)"><rect x="320" y="572" width="220" height="60" rx="12" fill="url(#face)" stroke="#ffb3b3" stroke-width="1.5"/></g><text x="430" y="609">Heartbeat 💓</text>
+    <g filter="url(#glow)"><rect x="740" y="572" width="220" height="60" rx="12" fill="url(#face)" stroke="#ffb3b3" stroke-width="1.5"/></g><text x="850" y="609">Cron ⏰</text>
+  </g>
+
+  <!-- npm start badge -->
+  <g filter="url(#glow)" transform="translate(640 668)">
+    <rect x="-130" y="-26" width="260" height="52" rx="12" fill="#1a0404" stroke="#ff5a5a" stroke-width="2.5"/>
+    <text x="0" y="8" fill="#ff8a8a" font-size="22" font-weight="bold" text-anchor="middle" font-family="monospace">npm start</text>
+  </g>
+</svg>

@@ -1,0 +1,91 @@
+<svg viewBox="0 0 1280 720" xmlns="http://www.w3.org/2000/svg" font-family="'Trebuchet MS','Segoe UI',sans-serif">
+  <defs>
+    <radialGradient id="bg" cx="50%" cy="40%" r="82%"><stop offset="0%" stop-color="#2a0606"/><stop offset="55%" stop-color="#120303"/><stop offset="100%" stop-color="#070707"/></radialGradient>
+    <radialGradient id="lob" cx="38%" cy="30%" r="75%"><stop offset="0%" stop-color="#ff9a9a"/><stop offset="45%" stop-color="#f02828"/><stop offset="100%" stop-color="#9c0f0f"/></radialGradient>
+    <radialGradient id="ped" cx="50%" cy="50%" r="50%"><stop offset="0%" stop-color="#ff4d4d" stop-opacity="0.55"/><stop offset="100%" stop-color="#ff4d4d" stop-opacity="0"/></radialGradient>
+    <linearGradient id="face" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#ff5a5a"/><stop offset="100%" stop-color="#c41414"/></linearGradient>
+    <filter id="glow" x="-60%" y="-60%" width="220%" height="220%"><feGaussianBlur stdDeviation="6" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+    <filter id="glowBig" x="-80%" y="-80%" width="260%" height="260%"><feGaussianBlur stdDeviation="13" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+  </defs>
+  <rect width="1280" height="720" fill="url(#bg)"/>
+  <g stroke="#7a0f0f" stroke-width="1.2" opacity="0.4"><path d="M80,615 H1200 M20,675 H1260 M300,700 L360,560 M620,700 L420,560"/></g>
+
+  <text x="64" y="88" fill="#ff5a5a" font-size="48" font-weight="bold" filter="url(#glow)">WHAT IS OPENCLAW?</text>
+  <text x="66" y="126" fill="#c93333" font-size="24">the open-source personal AI that actually runs your computer.</text>
+
+  <!-- pedestal glow -->
+  <ellipse cx="350" cy="560" rx="230" ry="60" fill="url(#ped)"/>
+  <ellipse cx="350" cy="558" rx="150" ry="30" fill="none" stroke="#ff5a5a" stroke-width="2" opacity="0.5"/>
+
+  <!-- ===== CUTE LOBSTER MASCOT ===== -->
+  <g filter="url(#glowBig)" transform="translate(350 360)">
+    <!-- antennae -->
+    <path d="M-14,-78 C-40,-130 -70,-150 -96,-168" fill="none" stroke="#e02828" stroke-width="6" stroke-linecap="round"/>
+    <path d="M14,-78 C40,-130 70,-150 96,-168" fill="none" stroke="#e02828" stroke-width="6" stroke-linecap="round"/>
+    <circle cx="-96" cy="-168" r="6" fill="#ff8a8a"/><circle cx="96" cy="-168" r="6" fill="#ff8a8a"/>
+
+    <!-- arms to claws -->
+    <path d="M-44,-6 C-86,-18 -112,-30 -134,-46" fill="none" stroke="#d62222" stroke-width="20" stroke-linecap="round"/>
+    <path d="M44,-6 C86,-18 112,-30 134,-46" fill="none" stroke="#d62222" stroke-width="20" stroke-linecap="round"/>
+
+    <!-- left claw (open pincer) -->
+    <g>
+      <ellipse cx="-158" cy="-66" rx="44" ry="34" fill="url(#lob)" stroke="#7a0f0f" stroke-width="2" transform="rotate(-18 -158 -66)"/>
+      <ellipse cx="-150" cy="-30" rx="30" ry="20" fill="url(#lob)" stroke="#7a0f0f" stroke-width="2" transform="rotate(-18 -150 -30)"/>
+    </g>
+    <!-- right claw -->
+    <g>
+      <ellipse cx="158" cy="-66" rx="44" ry="34" fill="url(#lob)" stroke="#7a0f0f" stroke-width="2" transform="rotate(18 158 -66)"/>
+      <ellipse cx="150" cy="-30" rx="30" ry="20" fill="url(#lob)" stroke="#7a0f0f" stroke-width="2" transform="rotate(18 150 -30)"/>
+    </g>
+
+    <!-- little legs -->
+    <g stroke="#c41818" stroke-width="6" stroke-linecap="round">
+      <path d="M-50,30 L-92,44"/><path d="M-52,58 L-92,76"/><path d="M-50,86 L-86,106"/>
+      <path d="M50,30 L92,44"/><path d="M52,58 L92,76"/><path d="M50,86 L86,106"/>
+    </g>
+
+    <!-- tail -->
+    <path d="M-44,96 C-30,150 30,150 44,96 C30,128 -30,128 -44,96 Z" fill="url(#lob)" stroke="#7a0f0f" stroke-width="2"/>
+    <path d="M-30,120 C-16,150 16,150 30,120" fill="url(#lob)" stroke="#7a0f0f" stroke-width="2"/>
+
+    <!-- body -->
+    <ellipse cx="0" cy="20" rx="66" ry="90" fill="url(#lob)" stroke="#7a0f0f" stroke-width="2.5"/>
+    <!-- body segment lines -->
+    <path d="M-58,6 Q0,24 58,6 M-60,40 Q0,58 60,40 M-54,74 Q0,90 54,74" fill="none" stroke="#9c1010" stroke-width="2.5" opacity="0.7"/>
+
+    <!-- face -->
+    <ellipse cx="-24" cy="-34" rx="17" ry="18" fill="#fff"/><ellipse cx="24" cy="-34" rx="17" ry="18" fill="#fff"/>
+    <circle cx="-21" cy="-31" r="7.5" fill="#2a0303"/><circle cx="27" cy="-31" r="7.5" fill="#2a0303"/>
+    <circle cx="-18" cy="-34" r="2.6" fill="#fff"/><circle cx="30" cy="-34" r="2.6" fill="#fff"/>
+    <!-- smile -->
+    <path d="M-16,-4 Q0,10 16,-4" fill="none" stroke="#2a0303" stroke-width="3.5" stroke-linecap="round"/>
+    <!-- cheeks -->
+    <circle cx="-40" cy="-8" r="8" fill="#ff7a7a" opacity="0.6"/><circle cx="40" cy="-8" r="8" fill="#ff7a7a" opacity="0.6"/>
+  </g>
+
+  <text x="350" y="640" fill="#ff8a8a" font-size="26" font-weight="bold" text-anchor="middle" filter="url(#glow)">🦞 OpenClaw</text>
+
+  <!-- ===== FACT CHIPS ===== -->
+  <g font-family="'Trebuchet MS','Segoe UI',sans-serif">
+    <g filter="url(#glow)"><rect x="654" y="176" width="556" height="58" rx="13" fill="url(#face)" stroke="#ffb3b3" stroke-width="1.5"/></g>
+    <text x="678" y="213" fill="#fff" font-size="22" font-weight="bold">🖥️ Runs on YOUR machine — real system access</text>
+
+    <g filter="url(#glow)"><rect x="654" y="244" width="556" height="58" rx="13" fill="url(#face)" stroke="#ffb3b3" stroke-width="1.5"/></g>
+    <text x="678" y="281" fill="#fff" font-size="22" font-weight="bold">🔌 Multi-channel — Telegram · Discord · Slack</text>
+
+    <g filter="url(#glow)"><rect x="654" y="312" width="556" height="58" rx="13" fill="url(#face)" stroke="#ffb3b3" stroke-width="1.5"/></g>
+    <text x="678" y="349" fill="#fff" font-size="22" font-weight="bold">🧠 Tools · 📝 Skills · 💾 Memory</text>
+
+    <g filter="url(#glow)"><rect x="654" y="380" width="556" height="58" rx="13" fill="url(#face)" stroke="#ffb3b3" stroke-width="1.5"/></g>
+    <text x="678" y="417" fill="#fff" font-size="22" font-weight="bold">⏰ Autonomous — heartbeat + cron</text>
+
+    <g filter="url(#glow)"><rect x="654" y="448" width="556" height="58" rx="13" fill="url(#face)" stroke="#ffb3b3" stroke-width="1.5"/></g>
+    <text x="678" y="485" fill="#fff" font-size="22" font-weight="bold">🧩 MCP — plug in any app or service</text>
+
+    <g filter="url(#glow)"><rect x="654" y="516" width="556" height="58" rx="13" fill="#1a0404" stroke="#ff5a5a" stroke-width="2"/></g>
+    <text x="678" y="553" fill="#ff8a8a" font-size="22" font-weight="bold">🆓 Open-source · MIT · built on a model engine</text>
+  </g>
+
+  <text x="932" y="632" fill="#ff6a6a" font-size="23" font-weight="bold" text-anchor="middle" filter="url(#glow)">…today, we build its core — from scratch.</text>
+</svg>

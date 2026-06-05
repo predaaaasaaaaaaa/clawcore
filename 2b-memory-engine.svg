@@ -1,0 +1,70 @@
+<svg viewBox="0 0 1280 720" xmlns="http://www.w3.org/2000/svg" font-family="'Trebuchet MS','Segoe UI',sans-serif">
+  <defs>
+    <radialGradient id="bg" cx="50%" cy="40%" r="80%"><stop offset="0%" stop-color="#2a0606"/><stop offset="55%" stop-color="#120303"/><stop offset="100%" stop-color="#070707"/></radialGradient>
+    <linearGradient id="face" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#ff5a5a"/><stop offset="100%" stop-color="#c41414"/></linearGradient>
+    <linearGradient id="cyl" x1="0" y1="0" x2="1" y2="0"><stop offset="0%" stop-color="#c41414"/><stop offset="45%" stop-color="#ff6a6a"/><stop offset="100%" stop-color="#a01010"/></linearGradient>
+    <filter id="glow" x="-60%" y="-60%" width="220%" height="220%"><feGaussianBlur stdDeviation="5" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+    <marker id="am" markerWidth="13" markerHeight="13" refX="8" refY="6.5" orient="auto"><path d="M2,2 L10,6.5 L2,11" fill="none" stroke="#ff7a7a" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></marker>
+  </defs>
+  <rect width="1280" height="720" fill="url(#bg)"/>
+
+  <text x="64" y="78" fill="#ff5a5a" font-size="42" font-weight="bold" filter="url(#glow)">THE MEMORY ENGINE.</text>
+  <text x="66" y="112" fill="#c93333" font-size="22">two paths: writing it down, and finding it again.</text>
+
+  <!-- WRITE PATH -->
+  <text x="80" y="186" fill="#ff8a8a" font-size="24" font-weight="bold">WRITE ↓</text>
+  <g font-size="18" fill="#fff">
+    <g filter="url(#glow)"><rect x="80" y="206" width="230" height="64" rx="12" fill="url(#face)" stroke="#ffb3b3" stroke-width="1.5"/></g>
+    <text x="195" y="234" text-anchor="middle">you: "remember</text><text x="195" y="256" text-anchor="middle">I'm Samy"</text>
+
+    <g filter="url(#glow)"><rect x="392" y="206" width="210" height="64" rx="12" fill="#5a0c0c" stroke="#ff5a5a" stroke-width="2"/></g>
+    <text x="497" y="234" fill="#ff9a9a" text-anchor="middle" font-weight="bold">write_memory</text><text x="497" y="256" fill="#d98a8a" font-size="15" text-anchor="middle">the tool fires</text>
+  </g>
+  <path d="M312,238 L388,238" fill="none" stroke="#ff7a7a" stroke-width="3.5" stroke-linecap="round" marker-end="url(#am)" filter="url(#glow)"/>
+
+  <!-- splits to two stores -->
+  <path d="M604,228 C700,210 720,180 800,176" fill="none" stroke="#ff7a7a" stroke-width="3.5" stroke-linecap="round" marker-end="url(#am)" filter="url(#glow)"/>
+  <path d="M604,250 C700,270 720,300 800,306" fill="none" stroke="#ff7a7a" stroke-width="3.5" stroke-linecap="round" marker-end="url(#am)" filter="url(#glow)"/>
+
+  <!-- SQLite db -->
+  <g filter="url(#glow)" transform="translate(812 120)">
+    <path d="M0,30 L0,108 A56,17 0 0 0 112,108 L112,30" fill="url(#cyl)" stroke="#ffb3b3" stroke-width="2"/>
+    <ellipse cx="56" cy="30" rx="56" ry="17" fill="#ff7a7a" stroke="#ffcaca" stroke-width="2"/>
+    <ellipse cx="56" cy="64" rx="56" ry="17" fill="none" stroke="#ffb3b3" stroke-width="1.3" opacity="0.6"/>
+  </g>
+  <text x="868" y="270" fill="#ffb3b3" font-size="16" text-anchor="middle">SQLite + full-text index</text>
+
+  <!-- MEMORY.md -->
+  <g filter="url(#glow)" transform="translate(992 280)">
+    <rect x="6" y="8" width="96" height="74" rx="9" fill="#7a0f0f"/><rect x="0" y="0" width="96" height="74" rx="9" fill="url(#face)" stroke="#ffb3b3" stroke-width="2"/>
+    <line x1="14" y1="24" x2="82" y2="24" stroke="#fff" stroke-width="2.4"/><line x1="14" y1="40" x2="82" y2="40" stroke="#ffdada" stroke-width="2.4"/><line x1="14" y1="56" x2="60" y2="56" stroke="#ffdada" stroke-width="2.4"/>
+  </g>
+  <text x="1040" y="376" fill="#ffb3b3" font-size="16" text-anchor="middle">MEMORY.md (readable)</text>
+
+  <!-- divider -->
+  <line x1="80" y1="420" x2="1200" y2="420" stroke="#8a1212" stroke-width="2" stroke-dasharray="3 12" opacity="0.6"/>
+
+  <!-- READ PATH -->
+  <text x="80" y="470" fill="#ff8a8a" font-size="24" font-weight="bold">READ ↓</text>
+  <g font-size="17" fill="#fff">
+    <g filter="url(#glow)"><rect x="80" y="492" width="210" height="64" rx="12" fill="url(#face)" stroke="#ffb3b3" stroke-width="1.5"/></g>
+    <text x="185" y="520" text-anchor="middle">later: "what's</text><text x="185" y="542" text-anchor="middle">my name?"</text>
+
+    <g filter="url(#glow)"><rect x="360" y="492" width="216" height="64" rx="12" fill="#5a0c0c" stroke="#ff5a5a" stroke-width="2"/></g>
+    <text x="468" y="518" fill="#ff9a9a" text-anchor="middle" font-weight="bold">clean the query</text><text x="468" y="540" fill="#d98a8a" font-size="14" text-anchor="middle">strip junk → safe search</text>
+
+    <g filter="url(#glow)"><rect x="646" y="492" width="200" height="64" rx="12" fill="#5a0c0c" stroke="#ff5a5a" stroke-width="2"/></g>
+    <text x="746" y="518" fill="#ff9a9a" text-anchor="middle" font-weight="bold">search the index</text><text x="746" y="540" fill="#d98a8a" font-size="14" text-anchor="middle">top matches</text>
+
+    <g filter="url(#glow)"><rect x="916" y="492" width="284" height="64" rx="12" fill="url(#face)" stroke="#ffcaca" stroke-width="2"/></g>
+    <text x="1058" y="520" fill="#fff" text-anchor="middle" font-weight="bold">dropped into the prompt</text><text x="1058" y="542" fill="#ffdada" font-size="14" text-anchor="middle">model answers: "Samy"</text>
+  </g>
+  <g filter="url(#glow)">
+    <path d="M292,524 L356,524" fill="none" stroke="#ff7a7a" stroke-width="3.5" stroke-linecap="round" marker-end="url(#am)"/>
+    <path d="M578,524 L642,524" fill="none" stroke="#ff7a7a" stroke-width="3.5" stroke-linecap="round" marker-end="url(#am)"/>
+    <path d="M848,524 L912,524" fill="none" stroke="#ff7a7a" stroke-width="3.5" stroke-linecap="round" marker-end="url(#am)"/>
+  </g>
+  <!-- read pulls from db -->
+  <path d="M720,488 C760,400 800,300 880,250" fill="none" stroke="#ff5a5a" stroke-width="2.5" stroke-dasharray="2 9" stroke-linecap="round" marker-end="url(#am)" opacity="0.8"/>
+  <text x="700" y="660" fill="#ff6a6a" font-size="22" font-weight="bold" text-anchor="middle" filter="url(#glow)">survives restarts. bad input can't break it.</text>
+</svg>
