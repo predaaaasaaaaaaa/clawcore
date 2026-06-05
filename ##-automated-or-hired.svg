@@ -1,0 +1,71 @@
+<svg viewBox="0 0 1280 720" xmlns="http://www.w3.org/2000/svg" font-family="'Poppins','Trebuchet MS',Arial,sans-serif">
+  <rect width="1280" height="720" fill="#F6F1E7"/>
+
+  <!-- HEADLINE -->
+  <text x="60" y="108" fill="#2B2B2B" font-size="58" font-weight="800" letter-spacing="-1">Get Automated — or Get Hired.</text>
+  <path d="M866 126 C 1000 116, 1120 116, 1212 125" stroke="#4E9E6A" stroke-width="9" fill="none" stroke-linecap="round"/>
+  <path d="M878 138 C 1000 131, 1110 131, 1200 137" stroke="#4E9E6A" stroke-width="4" fill="none" stroke-linecap="round" opacity="0.6"/>
+  <text x="62" y="156" fill="#6E6A60" font-size="24" font-weight="600">Same wave. Two very different sides to be on.</text>
+
+  <!-- center divider -->
+  <path d="M640 196 C 632 360, 648 520, 640 666" stroke="#C9C3B4" stroke-width="3" fill="none" stroke-dasharray="2 12" stroke-linecap="round"/>
+
+  <!-- ================= LEFT: AUTOMATED ================= -->
+  <g><rect x="60" y="196" width="250" height="46" rx="23" fill="#F8DCC4"/><text x="185" y="227" fill="#B5462F" font-size="24" font-weight="800" text-anchor="middle">REPLACED ✕</text></g>
+
+  <!-- Salesforce -->
+  <text x="60" y="300" fill="#2B2B2B" font-size="40" font-weight="800">9,000 → 5,000</text>
+  <text x="60" y="330" fill="#4A4640" font-size="20" font-weight="600">Salesforce support team, after AI agents.</text>
+  <text x="60" y="360" fill="#B5462F" font-size="21" font-weight="700" font-style="italic">"I need less heads." — the CEO</text>
+  <g><rect x="60" y="376" width="210" height="28" rx="14" fill="#F7D0D2"/><text x="165" y="396" fill="#2B2B2B" font-size="15" font-weight="700" text-anchor="middle">Marc Benioff · Fortune 2025</text></g>
+
+  <!-- Klarna -->
+  <text x="60" y="452" fill="#2B2B2B" font-size="40" font-weight="800">700 agents</text>
+  <text x="60" y="482" fill="#4A4640" font-size="20" font-weight="600">of work done by Klarna's AI. Staff −40%.</text>
+  <g><rect x="60" y="498" width="150" height="28" rx="14" fill="#F7D0D2"/><text x="135" y="518" fill="#2B2B2B" font-size="15" font-weight="700" text-anchor="middle">OpenAI · CNBC</text></g>
+
+  <!-- Amodei -->
+  <text x="60" y="572" fill="#2B2B2B" font-size="40" font-weight="800">~50%</text>
+  <text x="60" y="602" fill="#4A4640" font-size="20" font-weight="600">of entry-level white-collar jobs at risk.</text>
+  <g><rect x="60" y="618" width="266" height="28" rx="14" fill="#F7D0D2"/><text x="193" y="638" fill="#2B2B2B" font-size="15" font-weight="700" text-anchor="middle">Dario Amodei, Anthropic CEO · Axios</text></g>
+
+  <!-- sad sketch figure -->
+  <g stroke="#2B2B2B" stroke-width="2.4" fill="none" stroke-linecap="round" stroke-linejoin="round" transform="translate(470 250)">
+    <circle cx="0" cy="0" r="20"/>
+    <path d="M0 20 C -22 30, -24 70, -18 86 M0 20 C 22 30, 24 70, 18 86"/>
+    <circle cx="-7" cy="-3" r="2" fill="#2B2B2B"/><circle cx="7" cy="-3" r="2" fill="#2B2B2B"/>
+    <path d="M-8 12 Q0 6 8 12"/>
+  </g>
+
+  <!-- ================= RIGHT: HIRED ================= -->
+  <g><rect x="700" y="196" width="220" height="46" rx="23" fill="#CDE9D6"/><text x="810" y="227" fill="#3C7E52" font-size="24" font-weight="800" text-anchor="middle">HIRED ✓</text></g>
+
+  <!-- AI engineer #1 -->
+  <text x="700" y="300" fill="#2B2B2B" font-size="38" font-weight="800">#1 fastest-growing job</text>
+  <text x="700" y="330" fill="#4A4640" font-size="20" font-weight="600">"AI engineer" — two years running.</text>
+  <g><rect x="700" y="346" width="120" height="28" rx="14" fill="#D0E4F6"/><text x="760" y="366" fill="#2B2B2B" font-size="15" font-weight="700" text-anchor="middle">LinkedIn 2026</text></g>
+
+  <!-- agentic skills +986% -->
+  <text x="700" y="438" fill="#2B2B2B" font-size="38" font-weight="800">+986%</text>
+  <text x="700" y="468" fill="#4A4640" font-size="20" font-weight="600">job posts wanting agent skills (1 year).</text>
+  <g><rect x="700" y="484" width="190" height="28" rx="14" fill="#E4D8F5"/><text x="795" y="504" fill="#2B2B2B" font-size="15" font-weight="700" text-anchor="middle">Stanford AI Index 2026</text></g>
+
+  <!-- pay -->
+  <text x="700" y="576" fill="#2B2B2B" font-size="38" font-weight="800">$200K+</text>
+  <text x="700" y="606" fill="#4A4640" font-size="20" font-weight="600">average AI-engineer pay. Top roles $300K+.</text>
+  <g><rect x="700" y="622" width="220" height="28" rx="14" fill="#CDE9D6"/><text x="810" y="642" fill="#2B2B2B" font-size="15" font-weight="700" text-anchor="middle">2025 industry salary data</text></g>
+
+  <!-- happy sketch figure + bubble -->
+  <g stroke="#2B2B2B" stroke-width="2.4" fill="none" stroke-linecap="round" stroke-linejoin="round" transform="translate(1150 300)">
+    <circle cx="0" cy="0" r="20"/>
+    <path d="M0 20 C -22 30, -24 70, -18 86 M0 20 C 22 30, 24 70, 18 86"/>
+    <path d="M-16 6 C -22 -2, -14 -10, -6 -6 M16 6 C 22 -2, 14 -10, 6 -6"/>
+    <circle cx="-7" cy="-2" r="2" fill="#2B2B2B"/><circle cx="7" cy="-2" r="2" fill="#2B2B2B"/>
+    <path d="M-8 8 Q0 16 8 8"/>
+  </g>
+  <g transform="translate(980 360)">
+    <rect x="0" y="0" width="210" height="58" rx="16" fill="#FFFFFF" stroke="#2B2B2B" stroke-width="2.2"/>
+    <path d="M188 58 L196 76 L172 62 Z" fill="#FFFFFF" stroke="#2B2B2B" stroke-width="2.2"/>
+    <text x="105" y="35" fill="#2B2B2B" font-size="19" font-weight="700" text-anchor="middle">"I build the agents."</text>
+  </g>
+</svg>

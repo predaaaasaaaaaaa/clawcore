@@ -1,0 +1,61 @@
+<svg viewBox="0 0 1280 720" xmlns="http://www.w3.org/2000/svg" font-family="'Poppins','Trebuchet MS',Arial,sans-serif">
+  <rect width="1280" height="720" fill="#F6F1E7"/>
+
+  <!-- HEADLINE -->
+  <text x="60" y="120" fill="#2B2B2B" font-size="62" font-weight="800" letter-spacing="-1">Build Them. Now.</text>
+  <path d="M392 138 C 470 130, 540 130, 596 137" stroke="#E0544B" stroke-width="9" fill="none" stroke-linecap="round"/>
+  <path d="M402 150 C 470 144, 535 144, 586 149" stroke="#E0544B" stroke-width="4" fill="none" stroke-linecap="round" opacity="0.6"/>
+  <text x="62" y="168" fill="#6E6A60" font-size="25" font-weight="600">You don't need a team. You need agents.</text>
+
+  <!-- ===== QUOTE CARD (hero) ===== -->
+  <rect x="60" y="212" width="700" height="252" rx="24" fill="#FFFFFF" stroke="#2B2B2B" stroke-width="2.6"/>
+  <text x="92" y="300" fill="#F2C14E" font-size="110" font-weight="800" font-family="Georgia,serif">“</text>
+  <text x="150" y="290" fill="#2B2B2B" font-size="33" font-weight="700">The IT department of every</text>
+  <text x="150" y="334" fill="#2B2B2B" font-size="33" font-weight="700">company is going to be the</text>
+  <text x="150" y="378" fill="#2B2B2B" font-size="33" font-weight="700">HR department of AI agents.</text>
+  <text x="150" y="426" fill="#E0544B" font-size="23" font-weight="800">— Jensen Huang, NVIDIA CEO</text>
+  <g><rect x="618" y="408" width="110" height="30" rx="15" fill="#D0E4F6"/><text x="673" y="429" fill="#2B2B2B" font-size="15" font-weight="700" text-anchor="middle">CES 2025</text></g>
+
+  <!-- ===== SOLO BUILDER + AGENTS (right) ===== -->
+  <!-- person -->
+  <g stroke="#2B2B2B" stroke-width="2.6" fill="none" stroke-linecap="round" stroke-linejoin="round" transform="translate(880 300)">
+    <circle cx="0" cy="0" r="22"/>
+    <path d="M0 22 C -24 32, -26 78, -20 96 M0 22 C 24 32, 26 78, 20 96"/>
+    <path d="M-16 8 C -22 0, -14 -10, -6 -6 M16 8 C 22 0, 14 -10, 6 -6"/>
+    <circle cx="-7" cy="-2" r="2.2" fill="#2B2B2B"/><circle cx="7" cy="-2" r="2.2" fill="#2B2B2B"/>
+    <path d="M-8 9 Q0 16 8 9"/>
+  </g>
+  <!-- dotted links -->
+  <g stroke="#B9B3A4" stroke-width="2.4" stroke-dasharray="2 9" stroke-linecap="round" fill="none">
+    <path d="M905 270 C 980 240, 1030 235, 1070 240"/>
+    <path d="M912 300 C 1000 300, 1040 305, 1078 312"/>
+    <path d="M905 340 C 980 380, 1030 392, 1066 402"/>
+  </g>
+  <!-- robots -->
+  <g stroke="#2B2B2B" stroke-width="2.4" fill="none" stroke-linecap="round" stroke-linejoin="round">
+    <g transform="translate(1078 214)"><rect x="0" y="0" width="52" height="40" rx="9" fill="#E4D8F5"/><path d="M26 0 v-10" stroke="#2B2B2B"/><circle cx="26" cy="-12" r="3" fill="#2B2B2B" stroke="none"/><circle cx="16" cy="18" r="3.2" fill="#2B2B2B" stroke="none"/><circle cx="36" cy="18" r="3.2" fill="#2B2B2B" stroke="none"/><path d="M16 30 Q26 36 36 30"/></g>
+    <g transform="translate(1086 290)"><rect x="0" y="0" width="52" height="40" rx="9" fill="#CDE9D6"/><path d="M26 0 v-10" stroke="#2B2B2B"/><circle cx="26" cy="-12" r="3" fill="#2B2B2B" stroke="none"/><circle cx="16" cy="18" r="3.2" fill="#2B2B2B" stroke="none"/><circle cx="36" cy="18" r="3.2" fill="#2B2B2B" stroke="none"/><path d="M16 30 Q26 36 36 30"/></g>
+    <g transform="translate(1074 380)"><rect x="0" y="0" width="52" height="40" rx="9" fill="#F8DCC4"/><path d="M26 0 v-10" stroke="#2B2B2B"/><circle cx="26" cy="-12" r="3" fill="#2B2B2B" stroke="none"/><circle cx="16" cy="18" r="3.2" fill="#2B2B2B" stroke="none"/><circle cx="36" cy="18" r="3.2" fill="#2B2B2B" stroke="none"/><path d="M16 30 Q26 36 36 30"/></g>
+  </g>
+  <!-- bubble -->
+  <g transform="translate(806 188)">
+    <rect x="0" y="0" width="250" height="46" rx="15" fill="#FFFFFF" stroke="#2B2B2B" stroke-width="2.2"/>
+    <path d="M40 46 L34 64 L58 48 Z" fill="#FFFFFF" stroke="#2B2B2B" stroke-width="2.2"/>
+    <text x="125" y="29" fill="#2B2B2B" font-size="18" font-weight="700" text-anchor="middle">One of me — a team of agents.</text>
+  </g>
+
+  <!-- ===== MONEY STAT (right, below) ===== -->
+  <g stroke="#2B2B2B" stroke-width="2.6" fill="none" stroke-linecap="round" stroke-linejoin="round" transform="translate(800 500)">
+    <ellipse cx="26" cy="14" rx="26" ry="10"/>
+    <path d="M0 14 v26 a26 10 0 0 0 52 0 v-26"/>
+    <path d="M0 27 a26 10 0 0 0 52 0"/>
+    <text x="26" y="20" fill="#2B2B2B" font-size="18" font-weight="800" text-anchor="middle" stroke="none">$</text>
+  </g>
+  <text x="876" y="524" fill="#2B2B2B" font-size="40" font-weight="800">$2K–$8K / mo</text>
+  <text x="876" y="554" fill="#4A4640" font-size="19" font-weight="600">what agencies charge to build &amp; run agent systems</text>
+  <g><rect x="876" y="568" width="220" height="28" rx="14" fill="#CDE9D6"/><text x="986" y="588" fill="#2B2B2B" font-size="15" font-weight="700" text-anchor="middle">Digital Agency Network 2026</text></g>
+
+  <!-- ===== SEGUE LINE ===== -->
+  <g stroke="#E0544B" stroke-width="4" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M70 666 l 24 0 M82 656 l -12 10 l 12 10"/></g>
+  <text x="108" y="674" fill="#2B2B2B" font-size="26" font-weight="800">That exact skill is what we build in this video — from zero.</text>
+</svg>

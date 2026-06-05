@@ -1,0 +1,73 @@
+<svg viewBox="0 0 1280 720" xmlns="http://www.w3.org/2000/svg" font-family="'Poppins','Trebuchet MS',Arial,sans-serif">
+  <rect width="1280" height="720" fill="#F6F1E7"/>
+
+  <!-- ===== HEADLINE ===== -->
+  <text x="60" y="150" fill="#2B2B2B" font-size="62" font-weight="800" letter-spacing="-1">The Biggest</text>
+  <text x="60" y="216" fill="#2B2B2B" font-size="62" font-weight="800" letter-spacing="-1">Shift Since</text>
+  <text x="60" y="282" fill="#2B2B2B" font-size="62" font-weight="800" letter-spacing="-1">The Internet.</text>
+  <!-- hand-drawn underline -->
+  <path d="M66 300 C 220 290, 360 290, 470 299" stroke="#ED8468" stroke-width="9" fill="none" stroke-linecap="round"/>
+  <path d="M78 312 C 220 305, 360 305, 458 311" stroke="#ED8468" stroke-width="4" fill="none" stroke-linecap="round" opacity="0.6"/>
+
+  <text x="62" y="360" fill="#6E6A60" font-size="25" font-weight="600">Software is moving to agents — fast.</text>
+  <text x="62" y="392" fill="#6E6A60" font-size="25" font-weight="600">And the money already followed.</text>
+
+  <!-- sketch figure + bubble (bottom-left) -->
+  <g stroke="#2B2B2B" stroke-width="2.6" fill="none" stroke-linecap="round" stroke-linejoin="round">
+    <circle cx="150" cy="560" r="24"/>
+    <path d="M150 584 C 120 596, 116 650, 124 672"/>
+    <path d="M150 584 C 180 596, 184 650, 176 672"/>
+    <path d="M132 612 L 120 640 M168 612 L 182 638"/>
+    <circle cx="142" cy="556" r="2.4" fill="#2B2B2B"/><circle cx="158" cy="556" r="2.4" fill="#2B2B2B"/>
+    <path d="M142 568 Q150 574 158 568"/>
+  </g>
+  <g>
+    <rect x="210" y="520" width="330" height="84" rx="18" fill="#FFFFFF" stroke="#2B2B2B" stroke-width="2.4"/>
+    <path d="M214 576 L196 590 L224 584 Z" fill="#FFFFFF" stroke="#2B2B2B" stroke-width="2.4"/>
+    <text x="232" y="556" fill="#2B2B2B" font-size="20" font-weight="700">Every company is</text>
+    <text x="232" y="584" fill="#2B2B2B" font-size="20" font-weight="700">racing to adopt this.</text>
+  </g>
+
+  <!-- ===== STAT 1: adoption ===== -->
+  <g stroke="#2B2B2B" stroke-width="2.6" fill="none" stroke-linecap="round" stroke-linejoin="round">
+    <rect x="652" y="118" width="20" height="22" rx="3"/>
+    <rect x="678" y="104" width="20" height="36" rx="3"/>
+    <rect x="704" y="84" width="20" height="56" rx="3"/>
+    <path d="M648 96 C 690 70, 720 60, 742 56"/>
+    <path d="M742 56 L 730 52 M742 56 L 736 68"/>
+  </g>
+  <text x="772" y="120" fill="#2B2B2B" font-size="44" font-weight="800">&lt;1% → 33%</text>
+  <text x="772" y="152" fill="#4A4640" font-size="20" font-weight="600">of enterprise software runs AI agents by 2028</text>
+  <g><rect x="772" y="166" width="92" height="30" rx="15" fill="#D0E4F6"/><text x="818" y="187" fill="#2B2B2B" font-size="16" font-weight="700" text-anchor="middle">Gartner</text></g>
+
+  <!-- ===== STAT 2: market ===== -->
+  <g stroke="#2B2B2B" stroke-width="2.6" fill="none" stroke-linecap="round" stroke-linejoin="round">
+    <ellipse cx="688" cy="300" rx="34" ry="12"/>
+    <path d="M654 300 v22 a34 12 0 0 0 68 0 v-22"/>
+    <path d="M654 312 a34 12 0 0 0 68 0"/>
+    <text x="688" y="306" fill="#2B2B2B" font-size="22" font-weight="800" text-anchor="middle" stroke="none">$</text>
+    <path d="M730 290 C 760 268, 778 262, 798 258"/>
+    <path d="M798 258 L 786 254 M798 258 L 792 270"/>
+  </g>
+  <text x="772" y="304" fill="#2B2B2B" font-size="44" font-weight="800">$8B → $50B</text>
+  <text x="772" y="336" fill="#4A4640" font-size="20" font-weight="600">AI-agent market by 2030 — growing ~45% / yr</text>
+  <g><rect x="772" y="350" width="232" height="30" rx="15" fill="#CDE9D6"/><text x="888" y="371" fill="#2B2B2B" font-size="16" font-weight="700" text-anchor="middle">Grand View Research · MarketsandMarkets</text></g>
+
+  <!-- ===== STAT 3: apps ===== -->
+  <g stroke="#2B2B2B" stroke-width="2.6" fill="none" stroke-linecap="round" stroke-linejoin="round">
+    <rect x="650" y="470" width="74" height="58" rx="8"/>
+    <path d="M650 488 H724"/>
+    <circle cx="660" cy="479" r="2.6" fill="#2B2B2B"/><circle cx="670" cy="479" r="2.6" fill="#2B2B2B"/>
+    <!-- little robot face inside -->
+    <rect x="668" y="498" width="38" height="22" rx="5"/>
+    <circle cx="678" cy="509" r="2.6" fill="#2B2B2B"/><circle cx="696" cy="509" r="2.6" fill="#2B2B2B"/>
+    <path d="M687 490 v-8"/>
+  </g>
+  <text x="772" y="500" fill="#2B2B2B" font-size="44" font-weight="800">40%</text>
+  <text x="772" y="532" fill="#4A4640" font-size="20" font-weight="600">of business apps will run AI agents by 2026</text>
+  <g><rect x="772" y="546" width="92" height="30" rx="15" fill="#D0E4F6"/><text x="818" y="567" fill="#2B2B2B" font-size="16" font-weight="700" text-anchor="middle">Gartner</text></g>
+
+  <!-- little accent ticks -->
+  <g stroke="#ED8468" stroke-width="4" stroke-linecap="round"><path d="M1180 120 l 22 -10"/><path d="M1196 150 l 24 2"/></g>
+  <g stroke="#4E9E6A" stroke-width="4" stroke-linecap="round"><path d="M1196 612 l 22 8"/><path d="M1182 644 l 20 -8"/></g>
+</svg>
